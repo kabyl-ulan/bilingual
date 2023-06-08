@@ -47,25 +47,25 @@ function TypeYouHear({
                 {isAudioStop ? (
                     <ButtonUi onClick={audioPlay} variant="contained">
                         <img src={PlayRadio} alt="" />
-                        PLAY AUDIO
+                        Аудиону коюу
                     </ButtonUi>
                 ) : (
                     <ButtonUi onClick={audioPlay} variant="contained">
                         <img src={Pause} alt="" />
-                        STOP RECORDED AUDIO
+                        Аудиону токтотуу
                     </ButtonUi>
                 )}
 
-                <p>Correct ansver: {correctAnswer}</p>
+                <p>Туура жооп: {correctAnswer}</p>
             </Audio>
             <Answer>
-                <h3> User`s Answer</h3>
+                <h3> Колдонуучунун жообу</h3>
                 <BlText>
-                    <span>Entered Statement: </span>
+                    <span>Тапшырманын жообу: </span>
                     <span>{correctAnswer}</span>
                 </BlText>
                 <BlText>
-                    <span>Number of plays: </span>
+                    <span>Кайталоолордун саны: </span>
                     <span>{minNumberOfReplays}</span>
                 </BlText>
             </Answer>

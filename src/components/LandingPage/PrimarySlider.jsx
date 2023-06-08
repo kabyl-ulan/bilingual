@@ -10,28 +10,15 @@ import SliderItem from "./SliderItem";
 
 const sliderArray = [
     {
-        title: "Confirm your English proficiency today! ",
-        text: "For nearly 30 years, learners have turned to Rosetta Stone to build the fluency and confidence they need to speak new languages.",
+        title: "Кыргызча билимиңизди азыр өркүндөтүңүз!",
+        text: "Тил – жазуучунун, мылтык жоокердин куралы. Курал канчалык кубаттуу болсо, анын ээси ошончо күчтүү болот.",
         image: Globus,
         background: "#333",
     },
 
     {
-        title: "Confirm your English proficiency today! ",
-        text: "For nearly 30 years, learners have turned to Rosetta Stone to build the fluency and confidence they need to speak new languages.",
-        image: Globus,
-        background: "#333",
-    },
-
-    {
-        title: "Confirm your English proficiency today! ",
-        text: "For nearly 30 years, learners have turned to Rosetta Stone to build the fluency and confidence they need to speak new languages.",
-        image: Globus,
-        background: "#333",
-    },
-    {
-        title: "Confirm your English proficiency today! ",
-        text: "For nearly 30 years, learners have turned to Rosetta Stone to build the fluency and confidence they need to speak new languages.",
+        title: "Тилдин байлыгы ал ойдун байлыгы!",
+        text: "Элди түбөлүк эл кылып турган – анын тили. Ар бир тил – өз элине улуу. Биздин ар бирибиз бизди бул жарык дүйнөгө алып келип, эбегейсиз зор байлыкты – өз тилин тартуулаган элибизге түбөлүк милдеткербиз: анын тазалыгын сактап, байлыгына байлык кошушубуз керек.",
         image: Globus,
         background: "#333",
     },

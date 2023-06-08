@@ -69,7 +69,7 @@ function Respond({ data, setIsErrorInput }) {
     return (
         <StyledContainerRespond>
             <StyledContainer>
-                <StyledText>Question statement</StyledText>
+                <StyledText>Суроонун тапшырмасы</StyledText>
                 <StyledInput
                     value={dataField.statement}
                     onChange={(e) =>
@@ -82,7 +82,7 @@ function Respond({ data, setIsErrorInput }) {
                     }
                 />
                 <NumOfReplace>
-                    <h3>Number off Words</h3>
+                    <h3>Сөздөрдүн саны</h3>
                     <input
                         type="number"
                         value={+dataField.minNumberOfWords || 1}
@@ -99,7 +99,7 @@ function Respond({ data, setIsErrorInput }) {
             </StyledContainer>
             <StyledContainerMiniMiniBoss>
                 <ButtonUi onClick={() => navigate(-1)} variant="outlined">
-                    GO BACK
+                    АРТКА
                 </ButtonUi>
                 <ButtonUi
                     onClick={() => saveData(isUpdatePage ? "update" : "save")}

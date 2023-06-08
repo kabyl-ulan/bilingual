@@ -13,49 +13,49 @@ const Way = () => {
             <Main>
                 <Container>
                     <Box>
-                        <LearnMore to="/">Learn more</LearnMore>
+                        <LearnMore to="/">Көбүрөөк билүү</LearnMore>
                         <Wrapper>
                             <Row>
                                 <BoxItem className="box__item-1">
-                                    <Title>Expand your applicant pool</Title>
+                                    <Title>Тилди үйронүп Кыргызстанда саякатта</Title>
                                     <Description>
-                                        Tap into a diverse pool of candidates from 210+ countries
-                                        and territories of origin, who have taken the Bilingual
-                                        English Test because of its radical accessibility.
+                                        Ар кайсы өлкөдөн жана аймактан тапшыргандардын катарына
+                                        кириңиз
                                     </Description>
                                 </BoxItem>
                                 <BoxItem className="box__item-2">
-                                    <Title>Built on the latest assessment sciencee</Title>
+                                    <Title>Акыркы баалоо илиминин негизинде курулган</Title>
                                     <Description>
-                                        The Duolingo English Test is a computer adaptive test backed
-                                        by rigorous research, with results that are highly
-                                        correlated with other major assessments such as the TOEFL
-                                        and the IELTS.{" "}
+                                        Duolingo Test - бул TOEFL жана IELTS сыяктуу башка негизги
+                                        баа берүүлөр менен жогорку деңгээлде дал келген натыйжалары
+                                        менен катуу изилдөөлөр тарабынан колдоого алынган
+                                        компьютерге негизделген адаптивдик тест.
                                     </Description>
                                 </BoxItem>
                                 <BoxItem className="box__item-3">
-                                    <Title>Innovative test security</Title>
+                                    <Title>Инновациялык тест коопсуздугу</Title>
                                     <Description>
-                                        Industry-leading security protocols, individual test
-                                        proctoring, and computer adaptive technology help prevent
-                                        fraud and cheating and ensure results you can trust.
+                                        Тармактын алдыңкы коопсуздук протоколдору, жеке тестирлөө
+                                        жана компьютердик адаптациялоо технологиясы коопсуздукту
+                                        алдын алууга жана сиз ишене турган натыйжаларды камсыз
+                                        кылууга жардам берет.
                                     </Description>
                                 </BoxItem>
                                 <BoxItem className="box__item-4">
-                                    <Title>Convenient results dashboard</Title>
+                                    <Title>Ыңгайлуу жыйынтыктар тактасы</Title>
                                     <Description>
-                                        Access candidates’ certificates, video interviews, and
-                                        writing samples through a free and secure dashboard. Quickly
-                                        and easily view applicant data with filtering tools.{" "}
+                                        Талапкерлердин сертификаттарына, видео маектерине жана жазуу
+                                        үлгүлөрүнө акысыз жана коопсуз башкаруу тактасы аркылуу
+                                        кириңиз. Чыпкалоо куралдары менен арыз берүүчүнүн
+                                        маалыматтарын тез жана оңой көрүү.
                                     </Description>
                                 </BoxItem>
                                 <BoxItem className="box__item-5">
-                                    <Title>Secure Design</Title>
+                                    <Title>Коопсуз дизайн</Title>
                                     <Description>
-                                        Adaptive test engine dynamically administers test questions
-                                        from a database of hundreds of thousands of items. Someone
-                                        would have to take the test more than 1,000 times to see a
-                                        question repeated.
+                                        Адаптивдүү тест кыймылдаткычы жүз миңдеген элементтерден
+                                        турган маалымат базасынан тест суроолорун динамикалык түрдө
+                                        башкарат.
                                     </Description>
                                 </BoxItem>
                             </Row>

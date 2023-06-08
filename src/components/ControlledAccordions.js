@@ -29,35 +29,30 @@ export default function ControlledAccordions() {
 
     const Footerdata = [
         {
-            question: "What is Bilingual? ",
+            question: "Bilingual деген эмне? ",
             panel: 1,
-            answer: "Please take the test in a separate, quiet room. Close all other windows and close all other programs before starting the test.An external USB keyboard or mouse can be used during the test. However, when answering test questions, you should only type on one keyboard and use one mouse. Don't switch between multiple keyboards or mice.",
+            answer: "Bilingual - бул кыргыз тилин үйронүү де жакшы өздөштүрүү үчүн, тестирлөө жолу менен өтүүчү система",
         },
         {
-            question: "How can I show what I am typing during the test? ",
+            question: "Тестти кантип тапшыруу керек? ",
             panel: 2,
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            answer: "Тестти тапшыруу үчүн сайтка катталуу зарыл. Катталгын кийин тесттердин тизмесинен тандап тапшыруу керек.",
         },
         {
-            question: "Why should I take the Bilingual English Test? ",
+            question: "Эмне үчүн мен Bilingualда кыргыз тили боюнча тест тапшырышым керек? ",
             panel: 3,
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            answer: "Анткени бул платформа 100% бекер жана ыңгайлуу.",
         },
         {
-            question: "How can I make sure my microphone picks up my voice clearly?",
+            question: "Микрофонум үнүмдү так угарын кантип текшере алам?",
             panel: 4,
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        },
-        {
-            question: "How can I allow a test to record my computer's screen? ",
-            panel: 5,
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            answer: "Тестти тапшыруудан мурун, микрофонуңузду текшерип алуу керек.",
         },
     ];
     return (
         <StyledFooter>
             <StyledContainer>
-                <Header>FAQ:</Header>
+                <Header>Көп берилүүчү суроолор:</Header>
                 {Footerdata.map((el) => {
                     return (
                         <StyledAccordion
@@ -76,7 +71,7 @@ export default function ControlledAccordions() {
             </StyledContainer>
             <StyledFooterInline>
                 <StyledImage src={LogoBilingual} />
-                <StyledText>© Copyright PeakSoft. All Rights Reserved</StyledText>
+                <StyledText>© Copyright ArlenSoft. All Rights Reserved</StyledText>
                 <IconButtonStyled Icon={YoutubeIcon} />
                 <IconButtonStyled Icon={FacebookIcon} />
                 <IconButtonStyled Icon={InstagramIcon} />

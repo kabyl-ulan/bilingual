@@ -140,7 +140,7 @@ export default function MainIdea({ data, setIsErrorInput }) {
             </ModalAdminLayot>
             <Wrapper>
                 <Block>
-                    <h4>Passage</h4>
+                    <h4>Параграф</h4>
                     <TextArea
                         onChange={(e) => setPassage(e.target.value)}
                         value={passage}

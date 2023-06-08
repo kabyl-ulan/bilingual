@@ -108,7 +108,7 @@ export default function DescribeImage({ data, setIsErrorInput }) {
                     <h4>{img.alt ? img.alt : "File_name_of_the_image_file.jpg"}</h4>
                 </Row>
                 <Box>
-                    <span>Correct answer</span>
+                    <span>Туура жооп</span>
                     <InputUi
                         forInput={{ defaultValue: mainQuestion?.correctAnswer }}
                         handleChange={(e) => setCorrAnswer(e.target.value)}
@@ -117,7 +117,7 @@ export default function DescribeImage({ data, setIsErrorInput }) {
             </Wrapper>
             <BottomActionBtn>
                 <ButtonUi onClick={() => navigate(-1)} variant="outlined">
-                    GO BACK
+                    АРТКА
                 </ButtonUi>
                 <ButtonUi
                     onClick={() => saveData(isUpdatePage ? "update" : "save")}

@@ -103,7 +103,7 @@ export default function Highlight({ data, setIsErrorInput }) {
     return (
         <Main>
             <Block>
-                <h4> Questions to the Passage </h4>
+                <h4> Тексттин суроосу </h4>
                 <StyledInput
                     onChange={(e) =>
                         setDataField((prev) => {
@@ -117,7 +117,7 @@ export default function Highlight({ data, setIsErrorInput }) {
                 />
             </Block>
             <Block>
-                <h4> Passage </h4>
+                <h4> Текст </h4>
                 <TextArea
                     onChange={(e) => {
                         setDataField((prev) => {
@@ -130,7 +130,7 @@ export default function Highlight({ data, setIsErrorInput }) {
                 />
             </Block>
             <Block>
-                <h4> Highlight correct answer: </h4>
+                <h4> Туура жоопту белгилеңиз: </h4>
                 <CorrectAnswer
                     onMouseUp={highlighEvent}
                     dangerouslySetInnerHTML={{ __html: dataField.passage }}
@@ -138,7 +138,7 @@ export default function Highlight({ data, setIsErrorInput }) {
             </Block>
             <StyledContainerMiniMiniBoss>
                 <ButtonUi onClick={() => navigate(-1)} variant="outlined">
-                    GO BACK
+                    АРТКА
                 </ButtonUi>
                 <ButtonUi
                     onClick={() => saveData(isUpdatePage ? "update" : "save")}

@@ -40,14 +40,14 @@ function MyResult() {
                 <StyledTable>
                     <StyledHeading>
                         <span>#</span>
-                        <span>Date of Submition</span>
-                        <span>Test name</span>
-                        <span>Status</span>
-                        <span>Score</span>
+                        <span>Тапшыруу датасы</span>
+                        <span>Tесттин аты</span>
+                        <span>Статусу</span>
+                        <span>Упай</span>
                     </StyledHeading>
                     {tests.length === 0 ? (
                         <StyledContainerNull>
-                            <h1>The list is empty !</h1>
+                            <h1>Тизме бош!</h1>
                             <img src={BookBilingual} alt="The list is empty !" />
                         </StyledContainerNull>
                     ) : (

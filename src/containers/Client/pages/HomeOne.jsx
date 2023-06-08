@@ -67,7 +67,7 @@ function HomeOne() {
                         </Content>
                     </Row>
                     <ButtonUi variant="outlined" onClick={() => TryTestClick(item.id)}>
-                        TRY TEST
+                        Тесттен өтүү
                     </ButtonUi>
                 </StyledContainerHomeOne>
             ))}

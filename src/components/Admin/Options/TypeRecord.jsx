@@ -69,12 +69,12 @@ function TypeRecord({ data, setIsErrorInput }) {
     return (
         <>
             <Main>
-                <h3>Correct answer</h3>
+                <h3>Туура жооп</h3>
                 <InputUi value={answer} handleChange={(e) => setAnswer(e.target.value)} />
             </Main>
             <StyledContainerMiniMiniBoss>
                 <ButtonUi onClick={() => navigate(-1)} variant="outlined">
-                    GO BACK
+                    АРТКА
                 </ButtonUi>
                 <ButtonUi
                     onClick={() => saveData(isUpdatePage ? "update" : "save")}

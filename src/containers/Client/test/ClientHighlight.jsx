@@ -37,16 +37,16 @@ export default function ClientHighlight({ question }) {
             <Box>
                 <Row>
                     <Left>
-                        <h3>Passage</h3>
+                        <h3>Текст</h3>
                         <div onMouseUp={handleUp}>{question.passage}</div>
                     </Left>
                     <Right>
-                        <h3>click and drad text to highlight the answer to the question below</h3>
+                        <h3>төмөнкү суроонун жообун бөлүп көрсөтүү үчүн текстти басып, сүйрөңүз</h3>
                         <h5>{question.statement}</h5>
                         <Area>
                             <TextArea
                                 value={value}
-                                placeholder="Highlight text in the passage to set an answer"
+                                placeholder="Жоопту коюу үчүн үзүндүдөгү текстти белгилеңиз"
                                 width="100%"
                                 rows="1"
                                 disabled={!value}

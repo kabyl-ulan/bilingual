@@ -7,12 +7,12 @@ function Describe({ correctAnswer, link, userAnswer }) {
         <StyledContainerMain>
             <StyledContainer>
                 <StyledImage src={link} />
-                <StyledText>CorrectAnsver: `{correctAnswer}`</StyledText>
+                <StyledText>Туура жооп: `{correctAnswer}`</StyledText>
             </StyledContainer>
             <StyledContainerText>
-                <StyledTextOne>User’s Answer </StyledTextOne>
+                <StyledTextOne>Колдонуучунун жообу: </StyledTextOne>
                 <StyledTextOne>
-                    Entered Statement: <StyledText>{userAnswer}</StyledText>
+                    Тапшырманын жообу: <StyledText>{userAnswer}</StyledText>
                 </StyledTextOne>
             </StyledContainerText>
         </StyledContainerMain>

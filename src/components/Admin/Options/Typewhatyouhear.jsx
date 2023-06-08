@@ -114,7 +114,7 @@ function Typewhatyouhear({ data, setIsErrorInput }) {
     };
     return (
         <StlyedContainer>
-            <StyledTitle>Number off Replays</StyledTitle>
+            <StyledTitle>Кайталоолордун саны</StyledTitle>
             <StyledAudioBox>
                 <StyledNumber>
                     <input
@@ -139,7 +139,7 @@ function Typewhatyouhear({ data, setIsErrorInput }) {
                     }}
                     variant="contained"
                     component="label">
-                    Upload
+                    Жүктөө
                     <input hidden onChange={handleAudio} accept="audio/*" multiple type="file" />
                 </Button>
                 <StyledPause onClick={() => audioPlay()}>
@@ -147,7 +147,7 @@ function Typewhatyouhear({ data, setIsErrorInput }) {
                 </StyledPause>
                 <p>{dataField.file ? dataField.file.split("/")[3] : "Name audio file"}</p>
             </StyledAudioBox>
-            <StyledAnswer>Correct answer</StyledAnswer>
+            <StyledAnswer>Туура жооп</StyledAnswer>
             <Input
                 value={dataField.corrAnswer}
                 handleChange={(e) =>
@@ -161,7 +161,7 @@ function Typewhatyouhear({ data, setIsErrorInput }) {
             />
             <StyledBtnBox>
                 <ButtonUi onClick={() => navigate(-1)} variant="outlined">
-                    GO BACK
+                    АРТКА
                 </ButtonUi>
                 <ButtonUi
                     onClick={() => saveData(isUpdatePage ? "update" : "save")}

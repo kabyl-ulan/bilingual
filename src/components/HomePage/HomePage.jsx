@@ -12,8 +12,6 @@ import LandingPage from "components/LandingPage/SliderPage";
 
 import Way from "components/LandingPage/Way";
 
-import OurTeam from "components/OurTeam/OurTeam";
-
 import UseFullVideo from "components/UseFullVideo/UseFullVideo";
 
 import styled from "styled-components";
@@ -26,7 +24,6 @@ function HomePage() {
             </header>
             <section>
                 <CountUp />
-                <OurTeam />
                 <StyledSliderDiv>
                     <PrimarySlider />
                 </StyledSliderDiv>

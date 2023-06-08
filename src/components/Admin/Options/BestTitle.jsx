@@ -140,7 +140,7 @@ export default function BestTitle({ data, setIsErrorInput }) {
             </ModalAdminLayot>
             <Wrapper>
                 <Block>
-                    <h4>Passage</h4>
+                    <h4>Текст</h4>
                     <TextArea
                         onChange={(e) => setPassage(e.target.value)}
                         value={passage}

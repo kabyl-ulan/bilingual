@@ -31,7 +31,7 @@ function Autoplay() {
     return (
         <SectionContainer>
             <div>
-                <StyledTitle className="no-marg">Partners</StyledTitle>
+                <StyledTitle className="no-marg">Партнерлор</StyledTitle>
             </div>
             <Marquee {...settings}>
                 <StyledDiv>
