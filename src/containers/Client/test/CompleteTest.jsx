@@ -47,7 +47,7 @@ export default function CompleteTest() {
                 cardBoxShadow="0px 4px 39px -5px rgba(196, 196, 196, 0.6)">
                 <Container>
                     <Title>
-                        <p>Test is complete!</p>
+                        <p>Тест аяктады!</p>
                         <img src={Group} alt="" />
                     </Title>
 
@@ -55,9 +55,9 @@ export default function CompleteTest() {
                         <img width="113px" height="100px" src={Layer} alt="" />
                     </Image>
                     <Text>
-                        Your results were sent for evaluation proccess.
+                        Натыйжаларыңыз баалоо процессине жөнөтүлдү.
                         <br />
-                        After evaluation your results will be sent to your email.
+                        Баалоодон кийин натыйжаларыңыз электрондук почтаңызга жөнөтүлөт.
                     </Text>
                 </Container>
 
@@ -68,7 +68,7 @@ export default function CompleteTest() {
                         fontSize="14px"
                         maxheight="42px"
                         variant="outlined">
-                        Try again
+                        Кайрадан тапшыруу
                     </ButtonUi>
                     <ButtonUi
                         onClick={handleDone}
@@ -77,7 +77,7 @@ export default function CompleteTest() {
                         maxheight="42px"
                         variant="contained"
                         color="primary">
-                        Done
+                        Бүттү
                     </ButtonUi>
                 </Footer>
             </UICard>

@@ -18,12 +18,8 @@ function HeaderBottom() {
             <Header Choice="false" />
             <StyledHeaderBottom>
                 <StyledHeaderContainerText>
-                    <StyledHeaderText>Prove your English proficiency today with</StyledHeaderText>
                     <StyledHeaderLiderText>BILINGUAL</StyledHeaderLiderText>
-                    <StyledHeaderMelkiText>
-                        For nearly 30 years, learners have turned to Rosetta Stone to build the
-                        fluency and confidence they need to speak new languages.
-                    </StyledHeaderMelkiText>
+                    <StyledHeaderText>менен кыргыз тилин билериңизди далилдеңиз</StyledHeaderText>
                     <StyledHeaderButton to="/home">БАШТОО</StyledHeaderButton>
                 </StyledHeaderContainerText>
                 <StyledHeaderImageBook src={PhotoBook} />
@@ -61,21 +57,14 @@ const StyledHeaderContainerText = styled.div`
 const StyledHeaderText = styled.h1`
     font-weight: 700;
     font-size: 60px;
+    margin-bottom: 10px;
 `;
 const StyledHeaderLiderText = styled.h1`
     width: 295px;
     height: 75px;
     font-weight: 900;
     font-size: 60px;
-    margin-bottom: 30px;
     color: #c93d7d;
-`;
-const StyledHeaderMelkiText = styled.div`
-    width: 580px;
-    height: 60px;
-    font-weight: 400;
-    font-family: Poppins;
-    font-size: 20px;
 `;
 const StyledHeaderButton = styled(Link)`
     width: 200px;

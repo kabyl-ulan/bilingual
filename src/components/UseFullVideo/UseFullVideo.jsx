@@ -24,7 +24,7 @@ const UseFullVideo = () => {
             <UseFullVideoMain>
                 <Container>
                     <UseFullVideoWarpp>
-                        <UseFullVideoTitle>Useful videos</UseFullVideoTitle>
+                        <UseFullVideoTitle>Пайдалуу видеолор</UseFullVideoTitle>
                         <UseFullVidoeRow>
                             <CustomSlider settings={settings} bottomArrows>
                                 <UseFullVideoItem />

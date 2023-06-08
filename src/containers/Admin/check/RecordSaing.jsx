@@ -46,12 +46,12 @@ function RecordSaing({
             <Audio>
                 <ButtonUi onClick={audioPlay} variant="contained">
                     <img src={PlayRadio} alt="" />
-                    PLAY AUDIO
+                    Аудиону коюу
                 </ButtonUi>
-                <p>Correct ansver: {correctAnswer}</p>
+                <p>Туура жооп: {correctAnswer}</p>
             </Audio>
             <Box>
-                <h3>User Answer</h3>
+                <h3>Колдонуучунун жообу</h3>
                 <p>{userAnswer}</p>
             </Box>
         </>

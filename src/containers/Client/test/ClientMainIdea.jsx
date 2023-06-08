@@ -35,7 +35,7 @@ export default function ClientMainIdea({ question }) {
     return (
         <StyledSection>
             <StyledPassage>
-                <p>PASSAGE</p>
+                <p>Текст</p>
                 <hr />
                 <p>{question.passage}</p>
             </StyledPassage>

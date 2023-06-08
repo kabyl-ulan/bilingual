@@ -16,8 +16,8 @@ export default function CheckLayout({ children, data }) {
     const handleSave = async () => {
         try {
             const res = await baseAxios.post(`/result/evaluate-client-answer`, {
-                questionId: data.id,
-                scoreOfQuestion: +score,
+                questionAnswerId: data.id,
+                score: +score,
             });
             console.log(res);
             return navigate(-1);
@@ -31,55 +31,54 @@ export default function CheckLayout({ children, data }) {
                 <Box>
                     <AboutUser>
                         <BlText>
-                            <span>User: </span>
+                            <span>Колдонуучу: </span>
                             <span>{data.fullName}</span>
                         </BlText>
                         <BlText>
-                            <span>Test: </span>
+                            <span>Тест: </span>
                             <span>{data.testTitle}</span>
                         </BlText>
                     </AboutUser>
                     <AboutTest>
                         <div>
-                            <h3>Test Question</h3>
+                            <h3>Тест суроосу</h3>
                             <BoxItem>
                                 <BlText>
-                                    <span>Question Title: </span>
+                                    <span>Суроонун аталышы: </span>
                                     <span>{data.questionTitle}</span>
                                 </BlText>
                                 <BlText>
-                                    <span>Duration (in minutes): </span>
+                                    <span>Узактыгы (мүнөт менен): </span>
                                     <span>{convertHMS(data.duration)}</span>
                                 </BlText>
                                 <BlText>
-                                    <span>Question Type: </span>
+                                    <span>Суроо түрү: </span>
                                     <span>{formatterQuestionType(data.questionType)}</span>
                                 </BlText>
-                                {console.log(data)}
                                 {data.minNumberOfReplays && (
                                     <BlText>
-                                        <span>Mimimum number of Replays: </span>
+                                        <span>Кайталоолордун минималдуу саны: </span>
                                         <span>{data.minNumberOfReplays}</span>
                                     </BlText>
                                 )}
                                 {data.minNumberOfWords && (
                                     <BlText>
-                                        <span>Mimimum number of words: </span>
+                                        <span>Сөздөрдүн минималдуу саны: </span>
                                         <span>{data.minNumberOfWords}</span>
                                     </BlText>
                                 )}
                                 {data.statement && (
                                     <BlText>
-                                        <span> Statement </span>
+                                        <span> Билдирме </span>
                                         <span>{data.statement}</span>
                                     </BlText>
                                 )}
                             </BoxItem>
                         </div>
                         <BoxScore>
-                            <h3>Evaluation</h3>
+                            <h3>Баалоо</h3>
                             <Score>
-                                <span>Score: </span>
+                                <span>Упай: </span>
                                 {data.questionType === questionType.LISTEN_WORDS ||
                                 data.questionType === questionType.SELECT_WORDS ? (
                                     data.scoreOfQuestion
@@ -100,7 +99,7 @@ export default function CheckLayout({ children, data }) {
                     <Wrapper>{React.cloneElement(children, data)}</Wrapper>
                     <Actions>
                         <ButtonUi onClick={() => navigate(-1)} variant="outlined">
-                            GO BACK
+                            АРТКА
                         </ButtonUi>
                         <ButtonUi onClick={handleSave} variant="contained" color="success">
                             САКТОО

@@ -15,12 +15,10 @@ import { ReactComponent as NextIcon } from "../../assets/icons/BackIcon.svg";
 
 import { ReactComponent as BackIcon } from "../../assets/icons/NextIcon.svg";
 
-import Human1 from "../../assets/images/landingPage/Human1.svg";
-import Human2 from "../../assets/images/landingPage/Human2.svg";
-import Human3 from "../../assets/images/landingPage/Human3.svg";
-import Human4 from "../../assets/images/landingPage/Human4.svg";
-import Human5 from "../../assets/images/landingPage/Human5.svg";
-import Human6 from "../../assets/images/landingPage/Human6.svg";
+import Human1 from "../../assets/images/landingPage/Human1.jpg";
+import Human2 from "../../assets/images/landingPage/Human2.jpg";
+import Human3 from "../../assets/images/landingPage/Human3.jpg";
+import Human4 from "../../assets/images/landingPage/Human4.jpg";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -44,45 +42,31 @@ function SecondarySlider() {
     const aboutUser = [
         {
             id: Math.random().toString(),
-            name: "- Mahamatalieva Zuli",
-            text: "Bilingual has helped me to get a good grasp of the language in a fun and challenging way. I enjoy the dialogues and scenarios, which include helpful phrases that can be used in various situations.",
+            name: "- Савитбеков Раатбек",
+            text: "Bilingual мага тилди кызыктуу жана татаал жол менен жакшы өздөштүрүүгө жардам берди. Мага ар кандай кырдаалдарда колдонула турган пайдалуу фразаларды камтыган диалогдор жана сценарийлер жагат.",
             rating: 5,
             avatar: Human1,
         },
         {
             id: Math.random().toString(),
-            name: "- Abdimanap k Elnura",
-            text: "I have tried other language apps and found them boring but with Bilingual, it is easy and fun to practice every day.",
+            name: "- Арапов Берик",
+            text: "Мен башка тил колдонмолорун сынап көрдүм жана аларды кызыксыз деп таптым, бирок Bilingual менен күн сайын машыгуу оңой жана кызыктуу.",
             rating: 5,
             avatar: Human2,
         },
         {
             id: Math.random().toString(),
-            name: "- Melisov Abu",
-            text: "Great way to learn a language. Fun, interactive, and engaging. I am enjoying the course immensely and would recommend it to anyone who wishes to learn a second language.",
+            name: "- Попов Андрей",
+            text: "Тил үйрөнүүнүн эң сонун жолу. Кызыктуу, интерактивдүү жана кызыктуу. Мага курс абдан жагат жана аны экинчи тилди үйрөнүүнү каалагандарга сунуштайм.",
             rating: 5,
             avatar: Human3,
         },
         {
             id: Math.random().toString(),
-            name: "- Zhumaev Emirlan",
-            text: "Bilingual has helped me to get a good grasp of the language in a fun and challenging way. I enjoy the dialogues and scenarios, which include helpful phrases that can be used in various situations.",
+            name: "- Шаршеев Эрулан",
+            text: "Bilingual мага тилди кызыктуу жана татаал жол менен жакшы өздөштүрүүгө жардам берди. Мага ар кандай кырдаалдарда колдонула турган пайдалуу фразаларды камтыган диалогдор жана сценарийлер жагат.",
             rating: 5,
             avatar: Human4,
-        },
-        {
-            id: Math.random().toString(),
-            name: "- Zalkarbekov Chyngyz",
-            text: "I have tried other language apps and found them boring but with Bilingual, it is easy and fun to practice every day.",
-            rating: 5,
-            avatar: Human5,
-        },
-        {
-            id: Math.random().toString(),
-            name: "- Zalkarbekov Chyngyz",
-            text: "Great way to learn a language. Fun, interactive, and engaging. I am enjoying the course immensely and would recommend it to anyone who wishes to learn a second language.",
-            rating: 5,
-            avatar: Human6,
         },
     ];
     const [indexImage, setIndexImage] = useState(0);
@@ -104,7 +88,7 @@ function SecondarySlider() {
 
     return (
         <MainBox>
-            <MainTitle variant="h1">Why people love Bilingual</MainTitle>
+            <MainTitle variant="h1">Эмне үчүн адамдар BILINGUALды жакшы көрүшөт</MainTitle>
             <StyledSlider {...settings}>
                 {aboutUser.map((item, index) => (
                     <BoxActive key={item.id} className={index === indexImage}>

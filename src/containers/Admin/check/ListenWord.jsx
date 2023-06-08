@@ -48,7 +48,7 @@ function ListenWord({
                                     />
                                 </svg>
                             </span>
-                            <span>WORD {answer.id}</span>
+                            <span>СӨЗ {answer.id}</span>
                         </Content>
                         <Actions>
                             <CheckBox
@@ -61,7 +61,7 @@ function ListenWord({
                 ))}
             </StyledOptions>
             <StyledAnswers>
-                <p>users answers</p>
+                <p>колдонуучунун жообу</p>
                 {userOptionsAnswer.map((answer) => {
                     return (
                         <Main key={answer.id}>
@@ -80,7 +80,7 @@ function ListenWord({
                                         />
                                     </svg>
                                 </span>
-                                <span>WORD {answer.id}</span>
+                                <span>СӨЗ {answer.id}</span>
                             </Content>
                             <Actions>
                                 <CheckBox
