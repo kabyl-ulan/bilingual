@@ -69,7 +69,7 @@ export default function CheckLayout({ children, data }) {
                                 )}
                                 {data.statement && (
                                     <BlText>
-                                        <span> Билдирме </span>
+                                        <span> Билдирме: </span>
                                         <span>{data.statement}</span>
                                     </BlText>
                                 )}

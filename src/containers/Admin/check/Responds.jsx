@@ -24,21 +24,12 @@ function Responds({
     return (
         <Main>
             <Box>
-                <h4>User&apos;s Answer</h4>
+                <h4>Колдонуучунун жообу</h4>
                 <Respon>
-                    <span>Respond: </span>
-                    <p>
-                        &quot;But I must explain to you how all this mistaken idea of denouncing
-                        pleasure and praising pain was born and I will give you a complete account
-                        of the system. Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam But I must
-                        explain to you how all this mistaken idea of denouncing pleasure and
-                        praising pain was born and I will give you a complete account of the system.
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam &quot;
-                    </p>
+                    <span>Жооп: </span>
+                    <p>&quot;{userAnswer} &quot;</p>
                 </Respon>
-                <NumOfWords>Number of words: 39</NumOfWords>
+                <NumOfWords>Сөздөрдүн саны: {userNumberOfPlays}</NumOfWords>
             </Box>
         </Main>
     );

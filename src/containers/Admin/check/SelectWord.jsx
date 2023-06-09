@@ -20,7 +20,7 @@ function SelectWord({ options, userOptionsAnswer }) {
                 ))}
             </StyledOptions>
             <StyledAnswers>
-                <p>User&apos;s answers</p>
+                <p>Колдонуучунун жооптору</p>
                 <div>
                     {userOptionsAnswer.map((option, index) => (
                         <div key={option.id}>
