@@ -32,19 +32,19 @@ function EveluatingCheck() {
     };
 
     return state === "ERROR" ? (
-        <h1>Some thing went wrong</h1>
+        <h1>Бир ката кетти!</h1>
     ) : state ? (
         <StyledContainerMain>
             <StyledContainer>
                 <StyledContainerOne>
                     <StyledText>
-                        User: <Span>{state.userFullName}</Span>
+                        Колдонуучу: <Span>{state.userFullName}</Span>
                     </StyledText>
                     <StyledText>
-                        Test: <Span>{state.testTitle}</Span>
+                        Тест: <Span>{state.testTitle}</Span>
                     </StyledText>
                     <StyledText>
-                        Date of submission:
+                        Берилген датасы:
                         <Span>
                             {` ${getDate(state.dateOfSubmission)[1]} ${
                                 getDate(state.dateOfSubmission)[0]
@@ -54,29 +54,31 @@ function EveluatingCheck() {
                 </StyledContainerOne>
                 <StyledContainerTwo>
                     <StyledText>
-                        Final Score:
+                        Жалпы упай:
                         <StyledInside bgColor={state.finalScore}>{state.finalScore}</StyledInside>
                     </StyledText>
                     <StyledText>
-                        Final Status:
+                        Акыркы статусу:
                         <StyledInside bgColor={state.finalScore}>{state.finalStatus}</StyledInside>
                     </StyledText>
-                    <StyledButtonEmail>SEND RESULTS TO USER’S EMAIL</StyledButtonEmail>
+                    <StyledButtonEmail>
+                        ЖЫЙЫНТЫГЫН КОЛДОНУУЧУНУН ЭЛЕКТРОНДУК ПОЧТАСЫНА ЖӨНӨТҮҮ
+                    </StyledButtonEmail>
                 </StyledContainerTwo>
             </StyledContainer>
             <StyledContainerResults>
                 <StyledHeaderResults>
                     <span>#</span>
-                    <span>Question</span>
-                    <span>Score</span>
-                    <span>Status</span>
+                    <span>Суроолор</span>
+                    <span>Упай</span>
+                    <span>Статус</span>
                 </StyledHeaderResults>
                 {state.questionAnswerResponses.map((item, index) => {
                     return (
                         <StyledCardTests key={item.id}>
                             <span>{index + 1}</span>
                             <span>{item.questionTitle}</span>
-                            <span>{item.score} out of 10</span>
+                            <span>10дон {item.score}</span>
                             <StyledTextColor bgColor={item.status} style={{}}>
                                 {item.status}
                             </StyledTextColor>
@@ -194,7 +196,6 @@ const StyledHeaderResults = styled.div`
 const StyledButtonEmail = styled.button`
     padding: 13px 24px;
     width: 291px;
-    height: 42px;
     font-size: 14px;
     background: #ffffff;
     border: 2px solid #c4c4c4;
